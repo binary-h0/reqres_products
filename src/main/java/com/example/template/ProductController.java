@@ -37,6 +37,7 @@ public class ProductController {
     @PostMapping("/product")
     Product productInsert(@RequestBody String data) {
         System.out.println(data);
+        System.out.println("/product 호출됨!");
         return this.productService.save(data);
     }
 
